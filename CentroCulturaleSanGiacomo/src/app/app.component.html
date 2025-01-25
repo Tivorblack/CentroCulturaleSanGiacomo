@@ -8,29 +8,24 @@
   <div class="menu-content" *ngIf="menuOpen">
     <ul>
       <li><a href="#"><br><br></a></li>
-      <li><a href="#">Home &nbsp;&nbsp;</a></li>
-      <li><a href="#">Team &nbsp;&nbsp;</a></li>
-      <li><a href="#">Aree &nbsp;&nbsp;</a></li>
-      <li><a href="#">Dove &nbsp;&nbsp;</a></li>
-      <li><a href="#">Essere socio &nbsp;&nbsp;</a></li>
-      <li><a href="#">Calendario eventi &nbsp;&nbsp;</a></li>
-      <li><a href="#">Sponsor &nbsp;&nbsp;</a></li>
-      <li><a href="#">Contatti &nbsp;&nbsp;</a></li>
+      <li><a routerLink="/home" (click)="toggleMenu()" routerLinkActive="active">Home &nbsp;&nbsp;</a></li>
+      <li><a routerLink="/team" (click)="toggleMenu()" routerLinkActive="active">Team &nbsp;&nbsp;</a></li>
+      <li><a routerLink="/aree-tematiche" (click)="toggleMenu()" routerLinkActive="active">Aree Tematiche &nbsp;&nbsp;</a></li>
+      <li><a routerLink="/locations" (click)="toggleMenu()" routerLinkActive="active">Locations &nbsp;&nbsp;</a></li>
+      <li><a routerLink="/soci" (click)="toggleMenu()" routerLinkActive="active">Soci &nbsp;&nbsp;</a></li>
+      <li><a routerLink="/eventi" (click)="toggleMenu()" routerLinkActive="active">Eventi &nbsp;&nbsp;</a></li>
+      <li><a routerLink="/sponsor" (click)="toggleMenu()" routerLinkActive="active">Sponsor &nbsp;&nbsp;</a></li>
+      <li><a routerLink="/contatti" (click)="toggleMenu()" routerLinkActive="active">Contatti &nbsp;&nbsp;</a></li>
     </ul>
   </div>
 </div>
 
 
 
-<div class="hero">
-  <h1>Benvenuti al Centro Culturale</h1>
-  <p>Scopri eventi, workshop e spettacoli per ogni età!</p>
-</div>
+<!-- Qui viene caricato il contenuto delle pagine -->
+<router-outlet></router-outlet>
 
-<div class="news">
-  <h2>Ultime News</h2>
-  <ul>
-    <li>Prossimo evento: Spettacolo teatrale - 20 gennaio 2025</li>
-    <li>Workshop di pittura - 25 gennaio 2025</li>
-  </ul>
-</div>
+<!-- Footer -->
+<footer>
+  <p>© 2025 Centro Culturale San Giacomo</p>
+</footer>

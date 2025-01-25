@@ -68,6 +68,10 @@
   .menu-toggle.menu-open {
     transform: rotate(90deg); /* Ruota l'icona quando il menu è aperto */
   }
+  a.active {
+    color: #ff5722;
+    font-weight: bold;
+  }
   
   
   @keyframes fadeIn {
