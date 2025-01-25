@@ -29,7 +29,7 @@
     color: white;
     display: flex;
     justify-content: flex-end; /* Allinea a destra */
-    align-items: flex-start /* Centra verticalmente */
+    align-items: flex-start; /* Centra verticalmente */
     padding: 20px;
     z-index: 999;
     overflow: auto;
