@@ -1,0 +1,36 @@
+<div class="menu-container" [class.menu-open]="menuOpen">
+  <!-- Pulsante per aprire il menu -->
+  <button class="menu-toggle" [class.menu-open]="menuOpen" (click)="toggleMenu()">
+    <span class="material-icons">☰</span>
+  </button>
+
+  <!-- Menu a comparsa -->
+  <div class="menu-content" *ngIf="menuOpen">
+    <ul>
+      <li><a href="#"><br><br></a></li>
+      <li><a href="#">Home &nbsp;&nbsp;</a></li>
+      <li><a href="#">Team &nbsp;&nbsp;</a></li>
+      <li><a href="#">Aree &nbsp;&nbsp;</a></li>
+      <li><a href="#">Dove &nbsp;&nbsp;</a></li>
+      <li><a href="#">Essere socio &nbsp;&nbsp;</a></li>
+      <li><a href="#">Calendario eventi &nbsp;&nbsp;</a></li>
+      <li><a href="#">Sponsor &nbsp;&nbsp;</a></li>
+      <li><a href="#">Contatti &nbsp;&nbsp;</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+<div class="hero">
+  <h1>Benvenuti al Centro Culturale</h1>
+  <p>Scopri eventi, workshop e spettacoli per ogni età!</p>
+</div>
+
+<div class="news">
+  <h2>Ultime News</h2>
+  <ul>
+    <li>Prossimo evento: Spettacolo teatrale - 20 gennaio 2025</li>
+    <li>Workshop di pittura - 25 gennaio 2025</li>
+  </ul>
+</div>
