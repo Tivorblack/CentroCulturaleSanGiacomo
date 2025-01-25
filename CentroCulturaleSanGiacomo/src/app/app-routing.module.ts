@@ -12,7 +12,7 @@ import { ContattiComponent } from './pages/contatti/contatti.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'team', component: TeamComponent },
-  { path: 'aree-tematiche', component; AreeTematicheComponent},
+  { path: 'aree-tematiche', component: AreeTematicheComponent},
   { path: 'locations', component: LocationsComponent },
   { path: 'soci', component: SociComponent },
   { path: 'eventi', component: EventiComponent },
