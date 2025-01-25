@@ -10,6 +10,7 @@ import { SponsorComponent } from './pages/sponsor/sponsor.component';
 import { ContattiComponent } from './pages/contatti/contatti.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'team', component: TeamComponent },
   { path: 'aree-tematiche', component: AreeTematicheComponent},
@@ -17,8 +18,7 @@ const routes: Routes = [
   { path: 'soci', component: SociComponent },
   { path: 'eventi', component: EventiComponent },
   { path: 'sponsor', component: SponsorComponent },
-  { path: 'contatti', component: ContattiComponent },
-  { path: '**', redirectTo: '' }
+  { path: 'contatti', component: ContattiComponent }
 ];
 
 @NgModule({
