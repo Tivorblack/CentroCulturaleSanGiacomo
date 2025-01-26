@@ -1,21 +1,9 @@
-<div class="logo">
-  <img src="img/Logo_new.png" alt="Logo">
-</div>
-<div class="titolo"
-  <h1{{ titoloPagina }}</h1>
-</div>
-<br>
 <div>
-  <h2>{{ sottotitoloPagina }}</h2>
-</div>
-    
-  
   <div class="menu-container" [class.menu-open]="menuOpen">
     <!-- Pulsante per aprire il menu -->
     <button class="menu-toggle" [class.menu-open]="menuOpen" (click)="toggleMenu()">
       <span class="material-icons">☰</span>
     </button>
-  
     <!-- Menu a comparsa -->
     <div class="menu-content" *ngIf="menuOpen">
       <ul>
@@ -31,7 +19,13 @@
       </ul>
     </div>
   </div>
-
+  <div class="logo">
+    <img src="img/Logo_new.png" alt="Logo"><h1>{{ titoloPagina }}</h1>
+  </div>
+  <div>
+    <h2>{{ sottotitoloPagina }}</h2>
+  </div>
+</div>
 
 <!-- Qui viene caricato il contenuto delle pagine -->
 <router-outlet>
