@@ -22,6 +22,20 @@
     </nav>
   </header>
   
+  <table class="header-table">
+    <tr>
+      <td class="center"><img src="img/Logo_new.png" alt="Logo"></td>
+      <td class="left"><h1>{{ titoloPagina }}</h1></td>
+      <td class="right">
+        &nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td class="center">&nbsp;</td>
+      <td class="left">{{ sottotitoloPagina }}</td>
+      <td class="right">&nbsp;</td>
+    </tr>
+  </table>
   
   
   <!-- Qui viene caricato il contenuto delle pagine -->

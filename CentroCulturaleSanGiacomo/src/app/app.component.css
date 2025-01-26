@@ -1,3 +1,11 @@
+.logo {
+  position:sticky;
+  border: 1px;
+}
+.titolo{
+  position: sticky;
+  border: 1px;
+}
 /* Pulsante per il menu */
 .menu-toggle {
     position: absolute;
