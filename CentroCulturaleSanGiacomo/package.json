@@ -4,7 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:CentroCulturaleSanGiacomo": "node dist/centro-culturale-san-giacomo/server/server.mjs"
