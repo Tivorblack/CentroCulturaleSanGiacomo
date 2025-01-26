@@ -1,11 +1,13 @@
+
+<header class="header-grid">
 <div class="menu-container" [class.menu-open]="menuOpen">
     <!-- Pulsante per aprire il menu -->
     <button class="menu-toggle" [class.menu-open]="menuOpen" (click)="toggleMenu()">
       <span class="material-icons">☰</span>
     </button>
-  
+  </div>
     <!-- Menu a comparsa -->
-    <div class="menu-content" *ngIf="menuOpen">
+    <nav class="menu-content" *ngIf="menuOpen">
       <ul>
         <li><a href="#"><br><br></a></li>
         <li><a routerLink="/home" (click)="toggleMenu()" routerLinkActive="active">Home &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
@@ -17,8 +19,8 @@
         <li><a routerLink="/sponsor" (click)="toggleMenu()" routerLinkActive="active">Sponsor &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
         <li><a routerLink="/contatti" (click)="toggleMenu()" routerLinkActive="active">Contatti &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
       </ul>
-    </div>
-  </div>
+    </nav>
+  </header>
   
   
   

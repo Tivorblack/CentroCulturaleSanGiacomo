@@ -1,0 +1,19 @@
+.header-grid {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 10px;
+  width: 100%;
+}
+
+.menu {
+  justify-self: start;
+}
+
+.header-table {
+  justify-self: center;
+  width: 100%;
+}
+
+.nav-menu {
+  justify-self: end;
+}
