@@ -1,0 +1,31 @@
+<div class="menu-container" [class.menu-open]="menuOpen">
+    <!-- Pulsante per aprire il menu -->
+    <button class="menu-toggle" [class.menu-open]="menuOpen" (click)="toggleMenu()">
+      <span class="material-icons">☰</span>
+    </button>
+  
+    <!-- Menu a comparsa -->
+    <div class="menu-content" *ngIf="menuOpen">
+      <ul>
+        <li><a href="#"><br><br></a></li>
+        <li><a routerLink="/home" (click)="toggleMenu()" routerLinkActive="active">Home &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+        <li><a routerLink="/team" (click)="toggleMenu()" routerLinkActive="active">Team &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+        <li><a routerLink="/aree-tematiche" (click)="toggleMenu()" routerLinkActive="active">Aree Tematiche &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+        <li><a routerLink="/locations" (click)="toggleMenu()" routerLinkActive="active">Locations &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+        <li><a routerLink="/soci" (click)="toggleMenu()" routerLinkActive="active">Soci &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+        <li><a routerLink="/eventi" (click)="toggleMenu()" routerLinkActive="active">Eventi &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+        <li><a routerLink="/sponsor" (click)="toggleMenu()" routerLinkActive="active">Sponsor &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+        <li><a routerLink="/contatti" (click)="toggleMenu()" routerLinkActive="active">Contatti &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  
+  
+  <!-- Qui viene caricato il contenuto delle pagine -->
+  <router-outlet></router-outlet>
+  
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Centro Culturale San Giacomo</p>
+  </footer>

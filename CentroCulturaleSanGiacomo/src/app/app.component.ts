@@ -11,8 +11,10 @@ export class AppComponent {
   menuOpen = false;
 
   toggleMenu() {
+    console.log('Menu cliccato');
     this.menuOpen = !this.menuOpen;
   }
+
   titoloPagina: string = '';
   sottotitoloPagina: string = '';
   constructor(private router: Router) {
