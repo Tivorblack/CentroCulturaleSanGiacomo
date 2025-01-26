@@ -1,0 +1,71 @@
+/* Stile generale della tabella */
+.main-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  
+  /* Colonna immagine */
+  .image-column {
+    width: 20%;
+    vertical-align: top;
+    text-align: center;
+  }
+  
+  .image-column img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Righe di menu */
+  .menu-row {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #f0f0f0;
+  }
+  
+  /* Titolo delle sezioni */
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #e0e0e0;
+  }
+  
+  /* Colonne contenuto e data */
+  .date-column {
+    width: 30%;
+    text-align: center;
+    vertical-align: top;
+  }
+  
+  .content-column {
+    width: 70%;
+    padding: 10px;
+    text-align: justify;
+    vertical-align: top;
+  }
+  
+  /* Stile per la data */
+  .date {
+    text-align: center;
+  }
+  
+  .date .day {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .date .month {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .date .year {
+    font-size: 1rem;
+    color: #999;
+  }
+  
