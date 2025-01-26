@@ -1,16 +1,26 @@
+/* Contenitore principale dell'header */
 .header-container {
-  display: flex; /* Utilizza Flexbox per allineare gli elementi orizzontalmente */
-  align-items: center; /* Allinea tutti gli elementi verticalmente */
-  justify-content: space-between; /* Spaziatura uniforme tra immagine, titolo e menu */
+  display: flex; /* Flexbox per l'allineamento orizzontale */
+  align-items: center; /* Allineamento verticale centrato */
+  justify-content: space-between; /* Menu rimane a destra */
   padding: 10px 20px;
-  background-color: #f4f4f4;
-  border-bottom: 1px solid #ddd;
+  background-color: none;
+  border-bottom: none;
+  gap: 10px; /* Aggiunge uno spazio tra i figli solo quando necessario */
+}
+
+/* Contenitore immagine e titolo */
+.logo-title {
+  display: flex; /* Flexbox per allineare immagine e titolo in una riga */
+  align-items: center; /* Assicura che immagine e titolo siano centrati verticalmente */
+  gap: 10px; /* Distanza tra immagine e titolo */
 }
 
 /* Immagine (Logo) */
 .logo img {
-  height: 50px; /* Puoi modificare l'altezza per adattarla */
-  width: auto; /* Mantieni il rapporto d'aspetto */
+  height: 50px; /* Dimensioni immagine */
+  width: auto; /* Mantieni proporzioni */
+  display: block; /* Evita spazi bianchi indesiderati */
 }
 
 /* Titolo */
@@ -18,6 +28,14 @@
   margin: 0;
   font-size: 1.5rem;
   color: #333;
+  white-space: nowrap; /* Impedisce la rottura del testo */
+}
+/* SottoTitolo */
+.title h3 {
+  margin: 0;
+  font-size: 1 rem;
+  color: #333;
+  white-space: nowrap; /* Impedisce la rottura del testo */
 }
 /* Pulsante per il menu */
 .menu-toggle {

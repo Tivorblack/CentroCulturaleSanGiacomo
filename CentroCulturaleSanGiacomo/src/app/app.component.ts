@@ -24,38 +24,38 @@ export class AppComponent {
         switch (event.url) {
           case '/home':
             this.titoloPagina = 'Centro Culturale San Giacomo';
-            this.sottotitoloPagina = 'Centro Culturale San Giacomo';
+            this.sottotitoloPagina = '';
             break;
           case '/aree-tematiche':
             this.titoloPagina = 'Aree Tematiche';
-            this.sottotitoloPagina = 'Aree Tematiche';
+            this.sottotitoloPagina = 'Le aree tematiche del Centro';
             break;
           case '/contatti':
             this.titoloPagina = 'Contatti';
-            this.sottotitoloPagina = 'Contatti';
+            this.sottotitoloPagina = 'Come contattarci';
             break;
           case '/eventi':
             this.titoloPagina = 'Eventi';
-            this.sottotitoloPagina = 'Eventi';
+            this.sottotitoloPagina = 'Eventi passati e futuri';
             break;
           case '/locations':
             this.titoloPagina = 'Locations';
-            this.sottotitoloPagina = 'Locations';
+            this.sottotitoloPagina = 'Dove si svolgono le nostre proposte';
             break;
           case '/soci':
             this.titoloPagina = 'Soci';
-            this.sottotitoloPagina = 'Soci';
+            this.sottotitoloPagina = 'Essere soci...';
             break;
           case '/sponsor':
             this.titoloPagina = 'Sponsor';
-            this.sottotitoloPagina = 'Sponsor';
+            this.sottotitoloPagina = 'I nostri Sponsor';
             break;
           case '/team':
             this.titoloPagina = 'Team';
-            this.sottotitoloPagina = 'Team';
+            this.sottotitoloPagina = 'Il Team!';
             break;
           default:
-            this.titoloPagina = 'Pagina Generica';
+            this.titoloPagina = 'Centro Culturale San Giacomo';
         }
       }
     });
